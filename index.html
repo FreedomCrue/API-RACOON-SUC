@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enotiki</title>
+    <style>
+
+        #formContainer {
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .formInput {
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 200px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div id="formContainer">
+        <div id="photoenot"></div>
+        <div id="enotsList">
+            <h2>Список енотов</h2>
+            <ul class="enot-list" id="enotListItems"></ul>
+        </div>        
+        <div id="imageContainer"></div> 
+        <h2>Введите данные о еноте</h2>
+        <form>
+            <input type="text" id="enotik" placeholder="Введите название енота">
+            <input type="number" id="height" class="formInput" placeholder="Введите высоту (см)">
+            <input type="number" id="weight" class="formInput" placeholder="Введите вес (кг)">
+            <input type="number" id="age" class="formInput" placeholder="Введите возраст (лет)">
+            <button type="button" id="buttonenotik" onclick="clickEnotik()">Добавить</button>
+        </form>
+    </div>
+
+    <script defer src="script.js"></script>
+</body
+
+
+
